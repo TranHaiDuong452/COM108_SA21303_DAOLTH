@@ -30,7 +30,7 @@ int main()
     
 
     //#Bài 3: XÂY DỰNG CHƯƠNG TRÌNH TÍNH CHU VI DIỆN TÍCH HÌNH TRÒN
-    float banKinh,chuviHT,dientichHT;         // Bán kính hình tròn
+    float banKinh,chuviHT,dientichHT;
     const float PI = 3.14159; 
     printf("Moi ban nhap ban kinh cua hinh tron (r): ");
     scanf("%f", &banKinh);
