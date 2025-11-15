@@ -96,13 +96,44 @@ int main()
         printf("Phuong trinh co 1 nghiem duy nhat: x = %.4f\n", x);
     }
             */
-    double dien,b1,b2,b3,b4,b5,b6,kq;
+    double dien,kq;
     printf("nhap so dien tieu thu hang thang");
     scanf("%fl", &dien);
+    kq=dien*1.678;
+    kq=dien*1.734;
+    kq=dien*2.014;
+    kq=dien*2.536;
+    kq=dien*2.834;
+    kq=dien*2.927;
+
     if (dien>0 && dien<=50)
     {
-      kq=dien*1.678;
+     
+      printf("so tien dien thang nay cua ban la: %lf",kq);
     }
+    else if (dien>51 &&dien<=100)
+    {
     
+      printf("so tien dien thang nay cua ban la: %lf",kq);
+    }
+    else if (dien>101 &&dien<=200)
+    {
+      
+      printf("so tien dien thang nay cua ban la: %lf",kq);
+    }
+    else if (dien>201 &&dien<=300)
+    {
+     
+      printf("so tien dien thang nay cua ban la: %lf",kq);
+    }else if (dien>301 &&dien<=400)
+    {
+      
+      printf("so tien dien thang nay cua ban la: %lf",kq);
+    }
+    else 
+    {
+      
+      printf("so tien dien thang nay cua ban la: %lf",kq);
+    }
     return 0;
 }
