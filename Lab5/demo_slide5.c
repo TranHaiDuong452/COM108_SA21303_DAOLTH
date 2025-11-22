@@ -1,10 +1,18 @@
 #include <stdio.h>
 #include <math.h>
+//định nghĩa hàm 
+void giatrilonnhat(int a, int b);
+float gia_tri_nhonhat(int a, int b);
+
+// tao ham gia tri lon nhat 
+void giatrilonnha(int a, int b){
+
+}
 int main(){
     double a = -5;
     double b = 10;
     double c = 15;
-
+    giatrilonnha(a,b);
     /*int max = a;
     if(b>max) max=b;
     if(c>max) max=c;
