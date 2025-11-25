@@ -20,12 +20,17 @@ int checkYear(int year) {
     return 0; // không phải năm nhuận
 }
 
-// Bài 3: Hoán vị 2 số
-void swap(int *a, int *b) {
-    int temp; 
-    temp = *a; 
-    *a = *b; 
-    *b = temp; 
+// Bài 3: Kiểm tra số chia hết cho 5 và 9
+void checkDivisible(int n) {
+    if (n < 1 || n > 1000) {
+        printf("So khong nam trong khoang [1,1000]\n");
+    } else {
+        if (n % 5 == 0 && n % 9 == 0) {
+            printf("%d chia het cho ca 5 va 9\n", n);
+        } else {
+            printf("%d KHONG chia het cho ca 5 va 9\n", n);
+        }
+    }
 }
 
 int main() {
@@ -39,7 +44,7 @@ int main() {
     scanf("%d", &c);
 
     int ketQua = timGiaTriLonNhat(a, b, c);
-    printf("\nSo lon nhat trong 3 so %d, %d, va %d la: %d\n", a, b, c, ketQua);
+    printf("\n Số lớn nhất trong 3 số %d, %d, và %d là: %d\n", a, b, c, ketQua);
 
     // Bài 2
     int namNhap;
@@ -53,17 +58,11 @@ int main() {
     }
 
     // Bài 3
-    int soA, soB;
-    printf("\nNhap vao gia tri so A: ");
-    scanf("%d", &soA);
-    printf("Nhap vao gia tri so B: ");
-    scanf("%d", &soB);
+    int soNhap;
+    printf("\nNhap vao mot so trong khoang [1,1000]: ");
+    scanf("%d", &soNhap);
 
-    printf("\nTruoc khi hoan vi:\n");
-    printf("A = %d, B = %d\n", soA, soB);
-    swap(&soA, &soB);
-    printf("\nSau khi hoan vi:\n");
-    printf("A = %d, B = %d\n", soA, soB);
+    checkDivisible(soNhap);
 
     return 0;
 }
