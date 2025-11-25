@@ -36,11 +36,11 @@ void checkDivisible(int n) {
 int main() {
     // Bài 1
     int a, b, c;
-    printf("Nhap so thu nhat (a): ");
+    printf("Nhập số thứ nhất (a): ");
     scanf("%d", &a);
-    printf("Nhap so thu hai (b): ");
+    printf("Nhập số thứ hai (b): ");
     scanf("%d", &b);
-    printf("Nhap so thu ba (c): ");
+    printf("Nhập số thứ ba (c): ");
     scanf("%d", &c);
 
     int ketQua = timGiaTriLonNhat(a, b, c);
@@ -48,21 +48,22 @@ int main() {
 
     // Bài 2
     int namNhap;
-    printf("\nNhap vao nam can kiem tra: ");
+    printf("\n Nhập vào năm cần kiểm tra: ");
     scanf("%d", &namNhap);
 
     if (checkYear(namNhap)) {
-        printf("Nam %d la nam nhuan.\n", namNhap);
+        printf("Năm %d là năm nhuận.\n", namNhap);
     } else {
-        printf("Nam %d KHONG phai la nam nhuan.\n", namNhap);
+        printf("Năm %d KHÔNG phải là năm nhuậnnhuận.\n", namNhap);
     }
 
     // Bài 3
     int soNhap;
-    printf("\nNhap vao mot so trong khoang [1,1000]: ");
+    printf("\n Nhập vào một số trong khoảng [1,1000]: ");
     scanf("%d", &soNhap);
 
     checkDivisible(soNhap);
 
     return 0;
 }
+
